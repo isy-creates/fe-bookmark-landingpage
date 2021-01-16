@@ -1,0 +1,12 @@
+.hamburger-menu {
+  width: rem(16);
+  > span {
+    display: block;
+    height: 2px;
+    background-color: gray;
+
+    &:not(:last-of-type) {
+      margin-bottom: 2px;
+    }
+  }
+}

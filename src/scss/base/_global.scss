@@ -1,0 +1,28 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: rem(18);
+  font-family: 'Rubik', sans-serif;
+  color: $light;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.container{
+  max-width: rem(1440);
+  margin: 0 auto;
+  padding:rem(32) rem(25);
+}

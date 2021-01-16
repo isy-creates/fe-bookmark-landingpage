@@ -1,0 +1,13 @@
+.link{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &--dark{
+    color: $dark;
+  }
+
+  &--desktop{
+    margin-right: rem(44);
+    font-size: rem(12);
+  }
+}

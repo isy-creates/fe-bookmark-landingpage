@@ -1,0 +1,31 @@
+/* --------------------------------------------------
+
+   Breakpoint Settings
+   -------------------------------------------------- */
+
+$breakpoints: (
+  'small':            767px,
+  'medium':           992px,
+  'large':            1200px,
+) !default;
+
+/* --------------------------------------------------
+
+   Breakpoint Mixin
+   -------------------------------------------------- */
+
+@mixin respond-to($breakpoint) {
+
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+
+  }
+
+  @else {
+    @warn "there is no matching Breakpoint";
+  }
+
+}
