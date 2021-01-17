@@ -46,3 +46,4 @@ _
 | Task                      | Duration      |
 | --------------------------|:-------------:|
 | Initialise project        | 0h 30min      |
+| Header & Navigation       | 1h 17min      |

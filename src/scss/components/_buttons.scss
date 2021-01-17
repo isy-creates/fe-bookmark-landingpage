@@ -1,0 +1,60 @@
+.button {
+  font-size: rem(12);
+  border-radius: 5px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba($blue, .2);
+  color:$dark;
+  background-color: #f9f9f9;
+  border:1px solid #f9f9f9;
+  transition: all .3s ease-in-out;
+  font-weight: 500;
+
+  &:hover{
+    background-color: #fff;
+    border-color: $dark;
+  }
+
+  &--is-uppercase{
+    text-transform: uppercase;
+  }
+
+  &--is-red{
+    background-color: $red;
+    color:#fff;
+    border: 1px solid #DF6466;
+
+    &:hover{
+      color:$red;
+      border-color: $red;
+    }
+  }
+
+  &--is-blue{
+    background-color: $blue;
+    color:#fff;
+    border: 1px solid #616DB9;
+
+    &:hover{
+      color:$blue;
+      border-color: $blue;
+    }
+  }
+
+  &--is-transparent{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color:#fff;
+  }
+
+  &--is-small{
+    padding: rem(12) rem(33);
+  }
+
+  &--is-large {
+    padding: rem(16) rem(24)
+  }
+
+  &--is-extralarge{
+    display: block;
+  }
+}
