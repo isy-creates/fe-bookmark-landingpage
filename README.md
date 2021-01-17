@@ -43,7 +43,7 @@ _
 
 ## Time spend
 
-| Task                      | Duration      |
-| --------------------------|:-------------:|
-| Initialise project        | 0h 30min      |
-| Header & Navigation       | 1h 17min      |
+| Task                             | Duration      |
+| ---------------------------------|:-------------:|
+| Initialise project               | 0h 30min      |
+| Header, Navigation & Buttons     | 1h 43min      |
