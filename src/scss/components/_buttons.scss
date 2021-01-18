@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   font-size: rem(12);
   border-radius: 5px;
   letter-spacing: 1px;
@@ -51,7 +52,28 @@
   }
 
   &--is-large {
-    padding: rem(16) rem(24)
+    padding: rem(16) rem(24);
+    font-size: rem(12);
+
+    @include respond-to('small') {
+      font-size: rem(14);
+    }
+  }
+
+  &--is-stapel-md {
+    display: block;
+    width: 100%;
+    &:not(:last-of-type) {
+      margin-bottom: rem(24);
+    }
+
+    @include respond-to('medium') {
+      display: inline-block;
+      width: auto;
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &--is-extralarge{

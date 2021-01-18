@@ -1,11 +1,40 @@
 .flex {
   display: flex;
 
+  &--fd-col-lg {
+    flex-direction: column;
+
+    @include respond-to('large') {
+      flex-direction: row;
+    }
+  }
+
+  &--fd-col-md {
+    flex-direction: column;
+
+    @include respond-to('medium') {
+      flex-direction: row;
+    }
+  }
+
   &--jc-sb{
     justify-content: space-between;
   }
 
   &--ai-c{
     align-items: center;
+  }
+
+  //Order
+  &--order-1-large {
+    @include respond-to('large') {
+      order: 1;
+    }
+  }
+
+  &--order-2-large {
+    @include respond-to('large') {
+      order: 2;
+    }
   }
 }

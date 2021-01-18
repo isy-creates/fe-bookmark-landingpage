@@ -17,9 +17,9 @@
 </head>
 <body>
 
-  <header class="">
+  <header class="header">
     <div class="container flex flex--jc-sb flex--ai-c">
-    <img src="/images/logo-bookmark.svg" alt="Bookmark">
+    <img src="/images/logo-bookmark.svg" alt="Bookmark" class="header__logo">
     <div class="hamburger-menu hide-on-desktop">
       <span></span>
       <span></span>
@@ -29,24 +29,33 @@
       <a href="#" class="link link--dark link--desktop">Features</a>
       <a href="#" class="link link--dark link--desktop">Pricing</a>
       <a href="#" class="link link--dark link--desktop">Contact</a>
-      <a href="#" class="button button--is-uppercase button--is-blue button--is-small">Login</a>
+      <a href="#" class="button button--is-uppercase button--is-red button--is-small">Login</a>
     </nav>
   </div>
   </header>
+  <main>
+    <section class="hero background-shape">
+        <div class="container flex flex--fd-col-lg flex--jc-sb flex--ai-c">
+          <div class=" flex--order-2-large">
+            <img src="/images/illustration-hero.svg" alt="Bookmark" class="hero__image">
+          </div>
+          <article class="hero__text flex--order-1-large is--centered is--centered-md">
+            <h1 class="headline headline__h1">A Simple Bookmark Manager</h1>
+            <p class="text hero__maintext">A clean and simple interface to organize your favourite websites. Open a new 
+              browser tab and see your sites load instantly. Try it for free.</p>
+              <div class="hero__cta flex flex--fd-col-md">
+                <a href="#" class="button button--is-blue button--is-large button--is-stapel-md">Get it on Chrome</a>
+                <a href="#" class="button button--is-large button--is-stapel-md">Get it on Firefox</a>
+              </div>
+          </article>
+      </div>
+    </section>
+  </main>
 
   <!-- Features
-  Pricing
-  Contact
-  Login
+  
 
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
-
+  
   Features
 
   Our aim is to make it quick and easy for you to access your favourite websites. 

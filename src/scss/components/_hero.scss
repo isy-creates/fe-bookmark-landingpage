@@ -1,0 +1,22 @@
+.hero {
+
+  
+  &__text {
+    max-width: rem(480);
+    margin-top: rem(40);
+
+
+  }
+
+  &__maintext {
+    margin-bottom: rem(32);
+  }
+
+  &__cta {
+    > .button {
+      &:not(:last-of-type) {
+        margin-right: rem(16);
+      }
+    }
+  }
+}

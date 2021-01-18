@@ -1,1 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+.headline {
+  color:$dark;
+  margin: 0;
+  font-weight: 500;
+
+  &__h1 {
+    font-size: rem(43);
+    line-height: 1.2;
+    margin-bottom: rem(18);
+  }
+}
+
+.is--centered {
+  text-align: center;
+
+  &-md {
+    @include respond-to('medium') {
+      text-align: left;
+    }
+  }
+}
