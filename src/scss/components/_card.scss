@@ -1,0 +1,27 @@
+.card {
+  max-width: rem(280);
+  padding: rem(40) rem(0) rem(18) rem(0);
+  box-shadow: 0 20px 23px rgba($dark, .1);
+  border-radius: 10px;
+
+  &__image {
+    max-width: rem(83);
+  }
+
+  &__text {
+    padding: rem(28) 0 rem(30);
+  }
+
+  .button {
+    margin: rem(18);
+    margin-bottom: 0;
+  }
+
+  &__headline {
+    margin-bottom: rem(12);
+  }
+
+  &__detail {
+    margin-bottom: rem(0);
+  }
+}
