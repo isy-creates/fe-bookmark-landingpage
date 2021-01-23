@@ -7,10 +7,7 @@
     height: 50vw;
     width: 40%;
     background-color: $blue;
-    border-radius: 350px 0 0 350px;
     position: absolute;
-    right: 0;
-    top: 15%;
     z-index: -1;
 
     @include respond-to('small') {
@@ -20,6 +17,31 @@
     @include respond-to('large') {
       top: auto;
       bottom:0;
+    }
+  }
+
+  &--is-right {
+    &::before {
+      right: 0;
+      border-radius: 350px 0 0 350px;
+      top: 15%;
+
+      @include respond-to('large') {
+        top:auto;
+        bottom:0;
+      }
+    }
+  }
+
+  &--is-left {
+    &::before {
+      left: 0;
+      border-radius: 0 350px 350px 0;
+      bottom: 28%;
+
+      @include respond-to('large') {
+        bottom:0;
+      }
     }
   }
 

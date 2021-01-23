@@ -1,0 +1,104 @@
+.tab {
+
+  &__links {
+    position: relative;
+    max-width: rem(727);
+    border: 2px solid $line-color;
+    border-bottom: 0;
+    margin: 0 auto;
+    margin-bottom: rem(73);
+    list-style-type: none;
+    padding: 0;
+
+    @include respond-to('small') {
+      border:none;
+    }
+  }
+
+  &__link {
+    
+    border-bottom: 2px solid $line-color;
+
+    @include respond-to('small') {
+      width: 33.33%;
+    }
+
+    > a {
+      color: $light;
+      display: inline-block;
+      padding: rem(14) rem(0) rem(13) rem(0);
+      position: relative;
+
+      @include respond-to('small') {
+        width: 100%;
+      }
+
+      &::after {
+        content:'';
+        height: rem(2);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: inline-block;
+        border-bottom: 2px solid $red;
+        transition: transform .3s ease-in-out;
+        transform: scaleX(0);
+
+        @include respond-to('large') {
+          content:none;
+        }
+      }
+
+      &.is--active {
+        color: $dark;
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+
+      &:hover {
+        color: $dark;
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__image {
+    max-width: rem(535);
+    padding-bottom: rem(30);
+
+    @include respond-to('large') {
+      padding-bottom: rem(89);
+    }
+  }
+
+  &__text {
+    padding-top: rem(39);
+    max-width: rem(433);
+  }
+
+}
+
+
+
+//moveable magic line only on desktop
+#magic-line {
+  display: none;
+
+  @include respond-to('large') {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: $red;
+  }
+}
+

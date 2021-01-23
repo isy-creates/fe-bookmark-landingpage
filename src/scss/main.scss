@@ -4,6 +4,7 @@
 @import "utils/mixins/rem";
 @import "utils/flex";
 @import "utils/hide-show";
+@import "utils/spacing";
 
 
 @import "base/typography";
@@ -15,3 +16,6 @@
 @import "components/buttons";
 @import "components/hero";
 @import "components/background-shape";
+@import "components/tabs";
+
+@import "layout/header";

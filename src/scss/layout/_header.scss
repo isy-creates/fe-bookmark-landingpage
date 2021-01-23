@@ -1,0 +1,7 @@
+.header {
+  padding: rem(35) rem(70);
+
+  @include respond-to('large') {
+    padding: rem(48) rem(108);
+  }
+}

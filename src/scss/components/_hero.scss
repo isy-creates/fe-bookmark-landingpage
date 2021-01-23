@@ -12,6 +12,13 @@
     margin-bottom: rem(32);
   }
 
+  &__image {
+    @include respond-to('large') {
+      position: relative;
+      right: -108px;
+    }
+  }
+
   &__cta {
     > .button {
       &:not(:last-of-type) {

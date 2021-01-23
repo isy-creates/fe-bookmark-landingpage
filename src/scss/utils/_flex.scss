@@ -17,6 +17,14 @@
     }
   }
 
+  &--fd-col-sm {
+    flex-direction: column;
+
+    @include respond-to('small') {
+      flex-direction: row;
+    }
+  }
+
   &--jc-sb{
     justify-content: space-between;
   }

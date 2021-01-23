@@ -10,6 +10,10 @@
     line-height: 1.2;
     margin-bottom: rem(18);
   }
+
+  &__h2 {
+    margin-bottom: rem(30);
+  }
 }
 
 .is--centered {
@@ -20,4 +24,9 @@
       text-align: left;
     }
   }
+}
+
+.is--intro-text {
+  max-width: rem(539);
+  margin: 0 auto;
 }
