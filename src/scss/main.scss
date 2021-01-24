@@ -4,7 +4,6 @@
 @import "utils/mixins/rem";
 @import "utils/flex";
 @import "utils/hide-show";
-@import "utils/spacing";
 
 
 @import "base/typography";
@@ -18,6 +17,7 @@
 @import "components/background-shape";
 @import "components/tabs";
 @import "components/card";
+@import "components/accordion";
 
 @import "layout/header";
 @import "layout/homepage";

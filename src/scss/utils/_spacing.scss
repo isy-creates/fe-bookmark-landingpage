@@ -1,6 +1,0 @@
-.has--large-top-space {
-  margin-top: rem(94);
-  @include respond-to('large') {
-    margin-top: rem(62);
-  }
-}

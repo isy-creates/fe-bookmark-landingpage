@@ -27,11 +27,25 @@ img {
 }
 
 .container{
-  max-width: rem(1112);
   margin: 0 auto;
   padding:rem(32) rem(25);
 
   @include respond-to('large') {
     padding: 0;
+  }
+
+  &--is-wide {
+    max-width: rem(1112);
+  }
+
+  &--is-small {
+    max-width: rem(543);
+  }
+}
+
+section {
+  margin:0 0 rem(123);
+  @include respond-to('medium') {
+    margin:0 0 rem(149);
   }
 }

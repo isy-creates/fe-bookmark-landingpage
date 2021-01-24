@@ -1,6 +1,7 @@
 //Work with directories
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 //main configuration object
@@ -13,7 +14,8 @@ module.exports = {
   //path and filename of result bundle
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
 
   module: {
@@ -52,18 +54,19 @@ module.exports = {
           }
         ]
       },
-      //File Loader
       {
+        //Image Rules
         test: /\.(png|jpe?g|gif|svg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              outputPath: 'images'
+              outputPath: 'images',
+              context: "src"
             }
           }
         ]
-      }
+      },
     ]
   },
 

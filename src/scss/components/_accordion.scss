@@ -1,0 +1,55 @@
+.accordion {
+
+  margin: 0 0 rem(54) 0;
+  text-align: left;
+
+  &__head {
+    position: relative;
+    padding: rem(24) 0 rem(18);
+    border-top:1px solid $line-color;
+    border-bottom:1px solid $line-color;
+    color: $dark;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color:$red;
+      cursor: pointer;
+    }
+
+    &::after {
+      content:'';
+      -webkit-mask: url('/images/icon-arrow.svg');
+      -webkit-mask-size: cover;
+      background-color: $dark;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: rem(12);
+      width: rem(19);
+      transition: all .3s ease-in-out;
+    }
+
+    + dd {
+      display: none;
+    }
+
+    &--is-open {
+      &::after {
+        background-color: $red;
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+      + dd {
+        display: block;
+      }
+    }
+
+  }
+
+  &__answer {
+    padding: rem(26) 0 rem(36);
+    margin: 0;
+    font-size: rem(16);
+  }
+}
