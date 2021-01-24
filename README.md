@@ -49,3 +49,4 @@ _
 | Header, Navigation & Buttons     | 1h 43min      |
 | Hero Section                     | 1h 52min      |
 | Feature Section                  | 2h 31min      |
+| Download Section                 | 1h 35min      |
