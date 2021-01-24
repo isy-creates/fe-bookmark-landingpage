@@ -29,9 +29,29 @@
     justify-content: space-between;
   }
 
+  &--jc-c {
+    justify-content: center;
+  }
+
   &--ai-c{
     align-items: center;
   }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--gap {
+    > * {
+      margin: rem(32) 0 0 rem(32);
+    }
+
+    display: inline-flex;
+    margin: rem(-32) 0 0 rem(-32);
+    width: calc(100% + 32px)
+  }
+
+
 
   //Order
   &--order-1-large {

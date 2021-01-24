@@ -4,8 +4,11 @@
   box-shadow: 0 20px 23px rgba($dark, .1);
   border-radius: 10px;
 
+  flex: 0 1 rem(280);
+
   &__image {
-    max-width: rem(83);
+    max-height: rem(83);
+    width: auto;
   }
 
   &__text {
@@ -23,5 +26,17 @@
 
   &__detail {
     margin-bottom: rem(0);
+  }
+
+  &:first-of-type {
+    align-self: flex-start;
+  }
+
+  &:nth-child(2) {
+    align-self: center;
+  }
+
+  &:last-of-type {
+    align-self: flex-end;
   }
 }
