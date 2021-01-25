@@ -50,4 +50,5 @@ _
 | Hero Section                     | 1h 52min      |
 | Feature Section                  | 2h 31min      |
 | Download Section                 | 1h 35min      |
-| FAQ                              | 1h 05min      |
+| FAQ Section                      | 1h 05min      |
+| Newsletter Section               | 1h 05min      |
