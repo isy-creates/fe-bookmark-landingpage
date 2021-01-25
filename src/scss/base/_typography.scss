@@ -12,6 +12,7 @@
   }
 
   &__h2 {
+    font-size: rem(30);
     margin-bottom: rem(30);
   }
 }
@@ -46,4 +47,8 @@ p {
 
 .is--small {
   font-size: rem(14);
+}
+
+.is--white {
+  color:#fff;
 }

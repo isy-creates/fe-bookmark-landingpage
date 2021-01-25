@@ -1,0 +1,21 @@
+.has--error {
+  border: 2px solid $red ;
+  margin-bottom: 0;
+  border-radius: 5px 5px 0 0;
+
+  + .error-message {
+    display: block;
+  }
+}
+
+.error-message {
+  display: none;
+  margin-bottom: rem(13);
+  font-size: rem(14);
+  color:#fff;
+  background-color: $red;
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  padding:rem(4) 0 rem(5) rem(12);
+  text-align: left;
+}
