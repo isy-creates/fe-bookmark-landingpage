@@ -35,10 +35,12 @@ img {
   }
 
   &--is-wide {
+    @extend .container;
     max-width: rem(1112);
   }
 
   &--is-small {
+    @extend .container;
     max-width: rem(543);
   }
 }

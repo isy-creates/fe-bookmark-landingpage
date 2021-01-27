@@ -51,6 +51,10 @@
     width: calc(100% + 32px)
   }
 
+  &--column-gap {
+    column-gap: rem(21);
+  }
+
 
 
   //Order

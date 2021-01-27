@@ -1,0 +1,56 @@
+.footer {
+
+  background-color: $dark;
+  color: #fff;
+  padding: rem(33) rem(29);
+
+  &__navigation {
+    padding-bottom:rem(21);
+
+    @include respond-to('medium') {
+      padding-bottom: 0;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto rem(31);
+
+    @include respond-to('medium') {
+      margin: 0 rem(19) 0 0;
+    }
+  }
+
+  &__link {
+    color:#fff;
+    padding: rem(10) rem(45);
+    font-size: rem(14);
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__social-media {
+    max-width: rem(73);
+  }
+
+  &__social-icon {
+    max-width: rem(21);
+
+    &:not(:last-of-type) {
+      margin-right: rem(31);
+    }
+
+    svg {
+      fill: #fff;
+      transition: fill .3s ease-in-out;
+
+      &:hover {
+        fill:$red;
+      }
+    }
+  }
+
+}

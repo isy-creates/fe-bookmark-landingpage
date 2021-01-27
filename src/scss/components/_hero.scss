@@ -13,7 +13,7 @@
   }
 
   &__image {
-    @include respond-to('large') {
+    @include respond-to('extra-large') {
       position: relative;
       right: -108px;
     }
