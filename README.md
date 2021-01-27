@@ -52,3 +52,4 @@ _
 | Download Section                 | 1h 35min      |
 | FAQ Section                      | 1h 05min      |
 | Newsletter Section               | 1h 05min      |
+| Footer Section                   | 1h 43min      |
