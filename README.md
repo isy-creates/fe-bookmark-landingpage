@@ -53,3 +53,4 @@ _
 | FAQ Section                      | 1h 05min      |
 | Newsletter Section               | 1h 05min      |
 | Footer Section                   | 1h 43min      |
+| Mobile Menu                      | 1h 46min      |
