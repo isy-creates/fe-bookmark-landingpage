@@ -1,0 +1,68 @@
+
+
+.prevent-scrolling {
+  overflow-y: scroll;
+  position: fixed;
+}
+
+.is--hidden-background {
+  position: absolute;
+  visibility: hidden;
+  height: 0;
+}
+
+.is--mobile {
+
+  .is--hidden-background {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: rgba($dark, .9);
+    height: 100vh;
+    width: 100%;
+  }
+
+  .logo {
+    z-index: 500;
+    position: relative;
+
+    g {
+      fill:#fff;
+    }
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    z-index: 500;
+    top: 10vh;
+    width: 100%;
+    padding: 0 rem(25);
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    .link {
+      color: #fff;
+      padding:rem(22) 0;
+      border-top: 1px solid $light;
+
+      &:last-of-type {
+        border-bottom:1px solid $light;
+      }
+    }
+
+    .button {
+      background-color: transparent;
+      border-color: #fff;
+      font-size: rem(18);
+      display: block;
+      margin-top: rem(23);
+    }
+  }
+
+}

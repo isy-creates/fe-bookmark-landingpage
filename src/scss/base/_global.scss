@@ -28,7 +28,7 @@ img {
 
 .container{
   margin: 0 auto;
-  padding:rem(32) rem(25);
+  padding: rem(35) rem(25);
 
   @include respond-to('large') {
     padding: 0;

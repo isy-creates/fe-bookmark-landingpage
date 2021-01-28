@@ -1,3 +1,5 @@
 import '../scss/main.scss';
 
-console.log("JS running!");
+import MobileMenu from './mobile-menu/mobile-menu';
+
+new MobileMenu();

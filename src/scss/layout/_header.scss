@@ -1,7 +1,18 @@
 .header {
-  padding: rem(35) rem(70);
 
   @include respond-to('large') {
     padding: rem(48) rem(108);
+  }
+
+  &__right {
+    width: 100%;
+
+    @include respond-to('large') {
+      width: auto;
+    }
+  }
+
+  g {
+    fill:$dark;
   }
 }

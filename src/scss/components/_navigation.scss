@@ -1,18 +1,17 @@
 .link{
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: $dark;
+  transition: color .3s ease-in-out;
 
-  &--dark{
-    color: $dark;
-    transition: color .3s ease-in-out;
-
-    &:hover{
-      color:$red;
-    }
+  &:hover{
+    color:$red;
   }
 
-  &--desktop{
+  @include respond-to('large') {
     margin-right: rem(44);
     font-size: rem(12);
   }
+
 }
+

@@ -1,5 +1,6 @@
 .hamburger-menu {
   width: rem(16);
+  z-index: 500;
   > span {
     display: block;
     height: 2px;

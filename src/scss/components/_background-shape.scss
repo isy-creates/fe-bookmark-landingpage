@@ -24,7 +24,7 @@
     &::before {
       right: 0;
       border-radius: 350px 0 0 350px;
-      top: 15%;
+      top: 10%;
 
       @include respond-to('large') {
         top:auto;
