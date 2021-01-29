@@ -1,0 +1,11 @@
+@keyframes mobileAnimation {
+  0% {
+    visibility: hidden;
+    height: 0;
+  }
+
+  100% {
+    visibility: visible;
+    height: 100vh;
+  }
+}

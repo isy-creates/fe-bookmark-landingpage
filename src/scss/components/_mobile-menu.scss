@@ -9,19 +9,21 @@
   position: absolute;
   visibility: hidden;
   height: 0;
+  transition: height .5s ease-in-out;
 }
 
 .is--mobile {
 
   .is--hidden-background {
-    visibility: visible;
     position: fixed;
     top: 0;
     left: 0;
+    height: 100vh;
+    visibility: visible;
     z-index: 500;
     background-color: rgba($dark, .9);
-    height: 100vh;
     width: 100%;
+    transition: height .3s ease-in-out;
   }
 
   .logo {
@@ -34,10 +36,9 @@
   }
 
   .menu {
-    display: block;
     position: fixed;
     z-index: 500;
-    top: 10vh;
+    top: 12vh;
     width: 100%;
     padding: 0 rem(25);
     color: #fff;
@@ -50,8 +51,7 @@
       color: #fff;
       padding:rem(22) 0;
       border-top: 1px solid $light;
-
-      &:last-of-type {
+      &:nth-of-type(3) {
         border-bottom:1px solid $light;
       }
     }
@@ -66,3 +66,4 @@
   }
 
 }
+

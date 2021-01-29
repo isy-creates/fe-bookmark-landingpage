@@ -10,6 +10,7 @@
 
 .hide-on-desktop {
   @include respond-to('medium') {
-    display: none;
+    visibility: hidden;
+    height: 0;
   }
 }
