@@ -22,6 +22,16 @@
       width: 33.33%;
     }
 
+    &.is--active {
+      a {
+        color: $dark;
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+
     > a {
       color: $light;
       display: inline-block;
@@ -49,13 +59,6 @@
         }
       }
 
-      &.is--active {
-        color: $dark;
-        &::after {
-          transform: scaleX(1);
-        }
-      }
-
       &:hover {
         color: $dark;
 
@@ -67,6 +70,12 @@
   }
 
   &__content {
+
+    display: none;
+
+    &.is--active {
+      display: flex;
+    }
 
   }
 
