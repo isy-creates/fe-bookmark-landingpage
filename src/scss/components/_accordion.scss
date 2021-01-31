@@ -2,12 +2,13 @@
 
   margin: 0 0 rem(54) 0;
   text-align: left;
+  border-bottom:1px solid $line-color;
 
   &__head {
     position: relative;
     padding: rem(24) 0 rem(18);
+    
     border-top:1px solid $line-color;
-    border-bottom:1px solid $line-color;
     color: $dark;
     transition: all .3s ease-in-out;
 
@@ -31,25 +32,31 @@
     }
 
     + dd {
-      display: none;
+      visibility: hidden;
+      height: 0;
+      transition: height .3s ease-in-out;
     }
 
     &--is-open {
+      border-bottom:1px solid $line-color;
       &::after {
         background-color: $red;
         transform: translateY(-50%) rotate(180deg);
       }
 
       + dd {
-        display: block;
+        visibility: visible;
+        padding: rem(26) 0 rem(36);
+        box-sizing: content-box;
       }
     }
 
   }
 
   &__answer {
-    padding: rem(26) 0 rem(36);
     margin: 0;
     font-size: rem(16);
+    transition: height .3s ease-in-out;
+    
   }
 }
