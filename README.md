@@ -55,3 +55,4 @@ _
 | Footer Section                   | 1h 43min      |
 | Mobile Menu                      | 2h 46min      |
 | Added Tab functionality          | 1h 58min      |
+| Accordion                        | 1h 02min      |
