@@ -72,6 +72,7 @@
   &__content {
 
     display: none;
+    gap:rem(107);
 
     &.is--active {
       display: flex;
@@ -82,6 +83,8 @@
   &__image {
     max-width: rem(535);
     padding-bottom: rem(30);
+    height: rem(434);
+    object-fit: contain;
 
     @include respond-to('large') {
       padding-bottom: rem(89);
@@ -107,6 +110,7 @@
     bottom: 0;
     height: 2px;
     background-color: $red;
+    transition: left .3s ease-in-out;
   }
 }
 

@@ -54,4 +54,4 @@ _
 | Newsletter Section               | 1h 05min      |
 | Footer Section                   | 1h 43min      |
 | Mobile Menu                      | 2h 46min      |
-| Added Tab functionality          | 1h 33min      |
+| Added Tab functionality          | 1h 58min      |
