@@ -182,9 +182,11 @@
       <p class="newsletter__intro">35,000+ already joined</p>
       <h2 class="headline headline__h2 is--white">Stay up-to-date with what we’re doing</h2>
       <form action="#" class="flex flex--jc-sb flex--wrap">
-        <input type="text" placeholder="Enter your email adress" name="mail" required class="newsletter__input">
-        <div class="error-message">Whoops, make sure it's an email</div>
-        <input type="submit" value="Contact Us" class="button button--is-red button--is-small newsletter__button">
+        <fieldset class="newsletter__input">
+          <input id="input" type="text" placeholder="Enter your email adress" name="mail" required class="">
+          <div class="error-message">Whoops, make sure it's an email</div>
+        </fieldset>
+        <input id="submit" type="submit" value="Contact Us" class="button button--is-red button--is-small newsletter__button">
       </form>
   </div>
   </section>
