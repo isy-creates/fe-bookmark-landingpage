@@ -22,6 +22,7 @@
     flex: 0 1 100%;
     border: none;
     padding:0;
+    position: relative;
     
     @include respond-to('large') {
       flex: 0 1 rem(298);
@@ -32,6 +33,21 @@
     padding: 0;
     flex: 0 1 100%;
     margin-top: rem(13);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:disabled {
+      background-color: desaturate($red, 40%);
+      border-color: desaturate($red, 40%);
+      color: desaturate(#ffffff, 10%);
+
+      &:hover {
+        cursor: not-allowed;
+        color: #fff;
+      }
+    }
 
     @include respond-to('large') {
       flex: 0 1 rem(126);

@@ -56,3 +56,4 @@ _
 | Mobile Menu                      | 2h 46min      |
 | Added Tab functionality          | 1h 58min      |
 | Accordion                        | 1h 02min      |
+| Newsletter E-Mail check          | 0h 54min      |
