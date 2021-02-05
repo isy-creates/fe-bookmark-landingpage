@@ -37,7 +37,11 @@
     &::before {
       left: 0;
       border-radius: 0 350px 350px 0;
-      bottom: 31%;
+      bottom: 35%;
+
+      @include respond-to('small') {
+        bottom: 31%;
+      }
 
       @include respond-to('large') {
         bottom:0;
@@ -45,4 +49,12 @@
     }
   }
 
+}
+
+.features {
+  .background-shape {
+    &:before {
+      width: 0;
+    }
+  }
 }

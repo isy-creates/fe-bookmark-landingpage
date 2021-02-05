@@ -9,7 +9,7 @@
     list-style-type: none;
     padding: 0;
 
-    @include respond-to('small') {
+    @include respond-to('medium') {
       border:none;
     }
   }
@@ -18,7 +18,7 @@
     
     border-bottom: 2px solid $line-color;
 
-    @include respond-to('small') {
+    @include respond-to('medium') {
       width: 33.33%;
     }
 
@@ -38,7 +38,7 @@
       padding: rem(14) rem(0) rem(13) rem(0);
       position: relative;
 
-      @include respond-to('small') {
+      @include respond-to('medium') {
         width: 100%;
       }
 
@@ -72,7 +72,10 @@
   &__content {
 
     display: none;
-    gap:rem(107);
+
+    @include respond-to('large') {
+      gap:rem(107);
+    }
 
     &.is--active {
       display: flex;
@@ -83,11 +86,12 @@
   &__image {
     max-width: rem(535);
     padding-bottom: rem(30);
-    height: rem(434);
     object-fit: contain;
+    position: relative;
 
     @include respond-to('large') {
       padding-bottom: rem(89);
+      height: rem(434);
     }
   }
 

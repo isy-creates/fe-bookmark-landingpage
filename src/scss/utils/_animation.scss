@@ -20,6 +20,8 @@
   }
 }
 
+//Cards up
+
 @keyframes animation {
   from {
     opacity: 0;
@@ -32,6 +34,49 @@
   }
 }
 
+.download {
+  .animate {
+    .card {
+      animation: animation 1s ease-in-out forwards;
+    }
+  }
+}
+
+@for $i from 1 through 3 {
+  .animate .card:nth-of-type(#{$i}) {
+    -webkit-animation-delay:(#{$i*0.2s}); 
+    animation-delay:(#{$i*0.2s}); 
+  }
+}
+
+//Hero Image Jumping
+
+@keyframes loop {
+  0%, 99% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+//Growing Background Shape
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
 .animate {
-  animation: animation 1s ease-out;
+  &.background-shape {
+    &::before {
+      animation: grow 1s ease-in-out forwards;
+    }
+  }
 }

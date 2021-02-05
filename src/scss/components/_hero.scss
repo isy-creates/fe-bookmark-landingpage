@@ -13,6 +13,7 @@
   }
 
   &__image {
+    animation: loop 5s ease-in-out infinite;
     @include respond-to('extra-large') {
       position: relative;
       right: -108px;
