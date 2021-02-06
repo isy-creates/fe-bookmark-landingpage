@@ -32,18 +32,21 @@
     }
   }
 
-  &__social-media {
-    max-width: rem(73);
+  &__social-media { 
+
+    svg {
+      &:not(:last-of-type) {
+        margin-right: rem(31);
+      }
+    }
   }
 
   &__social-icon {
     max-width: rem(21);
 
-    &:not(:last-of-type) {
-      margin-right: rem(31);
-    }
+    
 
-    svg {
+    path {
       fill: #fff;
       transition: fill .3s ease-in-out;
 
