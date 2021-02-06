@@ -2,14 +2,14 @@
   
   display: none;
 
-  @include respond-to('medium') {
+  @include respond-to('large') {
     display: block;
   }
 
 }
 
 .hide-on-desktop {
-  @include respond-to('medium') {
+  @include respond-to('large') {
     visibility: hidden;
     height: 0;
   }

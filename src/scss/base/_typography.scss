@@ -25,6 +25,12 @@
       text-align: left;
     }
   }
+
+  &-lg {
+    @include respond-to('large') {
+      text-align: left;
+    }
+  }
 }
 
 .is--intro-text {

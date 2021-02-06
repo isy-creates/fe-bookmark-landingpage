@@ -45,7 +45,7 @@ img {
   }
 }
 
-section {
+.section {
   margin:0 0 rem(123);
   @include respond-to('medium') {
     margin:0 0 rem(149);

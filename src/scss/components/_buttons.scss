@@ -60,14 +60,14 @@
     }
   }
 
-  &--is-stapel-md {
+  &--is-stapel-lg {
     display: block;
     width: 100%;
     &:not(:last-of-type) {
       margin-bottom: rem(24);
     }
 
-    @include respond-to('medium') {
+    @include respond-to('large') {
       display: inline-block;
       width: auto;
       &:not(:last-of-type) {
