@@ -3,7 +3,10 @@
   padding: rem(40) rem(0) rem(18) rem(0);
   box-shadow: 0 20px 23px rgba($dark, .1);
   border-radius: 10px;
-  opacity: 0;
+
+  @include respond-to('large') {
+    opacity: 0;
+  }
 
   flex: 0 1 rem(280);
 

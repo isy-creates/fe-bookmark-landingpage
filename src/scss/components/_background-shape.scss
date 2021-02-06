@@ -51,10 +51,13 @@
 
 }
 
-.features {
-  .background-shape {
-    &:before {
-      width: 0;
+
+@include respond-to('large') {
+  .features {
+    .background-shape {
+      &:before {
+        width: 0;
     }
+  }
   }
 }

@@ -21,6 +21,12 @@
   }
 
   &__cta {
+
+    justify-content: center;
+
+    @include respond-to('large') {
+      justify-content: flex-start;
+    }
     > .button {
       &:not(:last-of-type) {
         margin-right: rem(16);

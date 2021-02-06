@@ -12,6 +12,7 @@ class Tab {
   }
 
   getActiveTab(e) {
+    e.preventDefault();
     const elementValue = (e.target.closest('li').dataset.trigger);
     const content = document.querySelector(`div[data-tab-content="${elementValue}"]`);
 

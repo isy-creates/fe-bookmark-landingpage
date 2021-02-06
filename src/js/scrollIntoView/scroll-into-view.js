@@ -4,12 +4,12 @@
 
   const config = {
     rootMargin: '0px',
-    threshold: [0.8]
+    threshold: [0.9]
   };  
 
   observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.intersectionRatio > 0.8) {
+      if (window.innerWidth > 1200 && entry.intersectionRatio > 0.9) {
         entry.target.classList.add('animate');
       } 
     });
