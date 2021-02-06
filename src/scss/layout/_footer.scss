@@ -34,7 +34,7 @@
 
   &__social-media { 
 
-    svg {
+    a {
       &:not(:last-of-type) {
         margin-right: rem(31);
       }
@@ -42,11 +42,8 @@
   }
 
   &__social-icon {
-    max-width: rem(21);
 
-    
-
-    path {
+    svg {
       fill: #fff;
       transition: fill .3s ease-in-out;
 
